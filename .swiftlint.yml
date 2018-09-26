@@ -1,0 +1,77 @@
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Config
+  - Carthage
+
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - function_parameter_count
+  - valid_docs
+  - todo
+  - line_length
+  - trailing_comma
+
+opt_in_rules: # some rules are only opt-in
+  - force_unwrapping
+  - closure_spacing
+  - overridden_super_call
+  - redundant_nil_coalescing
+  - closure_end_indentation
+  - first_where
+  #- private_outlet # we'd like to use this in future, but currently warns even for fileprivate
+
+type_body_length:
+  warning: 300
+  error: 400
+
+file_length:
+  warning: 400
+  error: 600
+
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: # excluded via string
+    - iPhone
+    - iPad
+
+variable_name:
+  min_length: # only min_length
+    error: 3 # only error
+  max_length:
+    warning: 80
+  excluded: # excluded via string array
+    - id
+    - to
+
+# increase enforcement to "error"
+overridden_super_call:
+  severity: error
+
+force_unwrapping: error
+force_cast: error
+colon:
+  severity: error
+legacy_constructor: error
+comma: error
+closing_brace: error
+opening_brace: error
+force_try: error
+vertical_whitespace:
+  severity: error
+closure_spacing: error
+control_statement: error
+leading_whitespace: error
+legacy_cggeometry_functions: error
+legacy_constant: error
+legacy_nsgeometry_functions: error
+mark: error
+nesting: error
+operator_whitespace: error
+redundant_nil_coalescing: error
+return_arrow_whitespace: error
+trailing_newline: error
+trailing_semicolon: error
