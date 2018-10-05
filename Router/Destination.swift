@@ -26,6 +26,22 @@ public enum PresentationHint {
     case replaceTab(index: TabIndexable, shouldSwitch: Bool)
 }
 
+extension PresentationHint: CustomStringConvertible {
+    public var description: String {
+        switch self {
+        case .navigate:
+            return "navigate"
+        case .modal(let metrics):
+            let style = metrics.style != nil ? String(describing: metrics.style!) : "none"
+            return "modal - animated: \(metrics.animated), style: \(style)"
+        case .tab(let index):
+            return "tab - index: \(index)"
+        case .replaceTab(let index, let shouldSwitch):
+            return "replaceTab - index: \(index), shouldSwitch: \(shouldSwitch)"
+        }
+    }
+}
+
 public struct ModalPresentationMetrics: Equatable {
     public let animated: Bool
     public let style: UIModalPresentationStyle?
