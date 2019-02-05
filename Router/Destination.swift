@@ -31,12 +31,11 @@ extension PresentationHint: CustomStringConvertible {
         switch self {
         case .navigate:
             return "navigate"
-        case .modal(let metrics):
-            let style = metrics.style != nil ? String(describing: metrics.style!) : "none"
-            return "modal - animated: \(metrics.animated), style: \(style)"
-        case .tab(let index):
+        case let .modal(metrics):
+            return "modal - animated: \(metrics.animated), style: \(metrics.style.styleDescription)"
+        case let .tab(index):
             return "tab - index: \(index)"
-        case .replaceTab(let index, let shouldSwitch):
+        case let .replaceTab(index, shouldSwitch):
             return "replaceTab - index: \(index), shouldSwitch: \(shouldSwitch)"
         }
     }
@@ -76,6 +75,32 @@ extension PresentationHint: Equatable {
             return lhsIndex.rawValue == rhsIndex.rawValue && lhsShouldSwitch == rhsShouldSwitch
         default:
             return false
+        }
+    }
+}
+
+extension Optional where Wrapped == UIModalPresentationStyle {
+    var styleDescription: String {
+        guard case let .some(style) = self else { return "none" }
+        switch style {
+        case .fullScreen:
+            return "fullScreen"
+        case .pageSheet:
+            return "pageSheet"
+        case .formSheet:
+            return "formSheet"
+        case .currentContext:
+            return "currentContext"
+        case .custom:
+            return "custom"
+        case .overFullScreen:
+            return "overFullScreen"
+        case .overCurrentContext:
+            return "overCurrentContext"
+        case .popover:
+            return "popover"
+        case .none:
+            return "none"
         }
     }
 }
