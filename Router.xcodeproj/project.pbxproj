@@ -158,7 +158,7 @@
 				TargetAttributes = {
 					0752870E1FB0ABEE00C0D4ED = {
 						CreatedOnToolsVersion = 9.0.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					075287171FB0ABEE00C0D4ED = {
@@ -173,6 +173,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 075287051FB0ABEE00C0D4ED;
 			productRefGroup = 075287101FB0ABEE00C0D4ED /* Products */;
@@ -387,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.davidhardiman.Router;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -411,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.davidhardiman.Router;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
