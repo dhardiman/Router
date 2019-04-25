@@ -8,17 +8,10 @@
 
 import Foundation
 
-/// Result returned from a route lookup
-///
-/// - success: Look up successful. Payload contains the created Destination
-/// - failure: Look up unsuccessful. Payload contains the returned error
-public enum DestinationResult {
-    case success(Destination)
-    case failure(Error)
-}
+public typealias DestinationResult = Result<Destination, Error>
 
 /// Route describes a conversion from a URL or model object to a destination.
-public protocol Route: class {
+public protocol Route: AnyObject {
     init()
 
     /// Suggested hint for overriding a created destination's hint
