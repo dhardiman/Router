@@ -84,7 +84,8 @@
 				96F4CD8C2004D83500C5EE2F /* RouteTarget.swift */,
 				075287131FB0ABEE00C0D4ED /* Info.plist */,
 			);
-			path = Router;
+			name = Router;
+			path = Sources/Router;
 			sourceTree = "<group>";
 		};
 		0752871C1FB0ABEE00C0D4ED /* RouterTests */ = {
@@ -92,7 +93,8 @@
 			children = (
 				0752871F1FB0ABEE00C0D4ED /* Info.plist */,
 			);
-			path = RouterTests;
+			name = RouterTests;
+			path = Tests/RouterTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +380,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Router/Info.plist;
+				INFOPLIST_FILE = Sources/Router/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,7 +404,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Router/Info.plist;
+				INFOPLIST_FILE = Sources/Router/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,7 +424,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RouterTests/Info.plist;
+				INFOPLIST_FILE = Tests/RouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +442,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RouterTests/Info.plist;
+				INFOPLIST_FILE = Tests/RouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

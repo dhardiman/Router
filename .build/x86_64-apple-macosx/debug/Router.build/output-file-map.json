@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/master.swiftdeps"
+  },
+  "/Users/davidhardiman/Projects/Router/Sources/Router/Destination.swift": {
+    "dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Destination.d",
+    "object": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Destination.swift.o",
+    "swiftmodule": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Destination~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Destination.swiftdeps"
+  },
+  "/Users/davidhardiman/Projects/Router/Sources/Router/Route.swift": {
+    "dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Route.d",
+    "object": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Route.swift.o",
+    "swiftmodule": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Route~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Route.swiftdeps"
+  },
+  "/Users/davidhardiman/Projects/Router/Sources/Router/RouteTarget.swift": {
+    "dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/RouteTarget.d",
+    "object": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/RouteTarget.swift.o",
+    "swiftmodule": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/RouteTarget~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/RouteTarget.swiftdeps"
+  },
+  "/Users/davidhardiman/Projects/Router/Sources/Router/Router.swift": {
+    "dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Router.d",
+    "object": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Router.swift.o",
+    "swiftmodule": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Router~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidhardiman/Projects/Router/.build/x86_64-apple-macosx/debug/Router.build/Router.swiftdeps"
+  }
+}
