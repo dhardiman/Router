@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "7f78089ef67580950103234e626b373b"
-build_time: [1559647960, 741305000]
-inputs:
-  "/Users/davidhardiman/Projects/Router/Sources/Router/Destination.swift": !dirty [1559647628, 991879102]
-  "/Users/davidhardiman/Projects/Router/Sources/Router/Route.swift": !dirty [1559647628, 992684419]
-  "/Users/davidhardiman/Projects/Router/Sources/Router/RouteTarget.swift": !dirty [1537973953, 514834840]
-  "/Users/davidhardiman/Projects/Router/Sources/Router/Router.swift": !dirty [1537974124, 522877639]
