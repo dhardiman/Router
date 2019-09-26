@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Router",
+    platforms: [
+        .iOS(.v10)
+    ],
     products: [
         .library(name: "Router", targets: ["Router"]),
         .library(name: "MockRouter", targets: ["MockRouter"])

@@ -9,6 +9,7 @@
 import Foundation
 import Hopoate
 import Router
+import UIKit
 
 public class MockRouter: Router {
     public var routeResponse: UIViewController = UIViewController()
