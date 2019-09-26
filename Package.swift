@@ -7,11 +7,12 @@ let package = Package(
     name: "Router",
     products: [
         .library(name: "Router", targets: ["Router"]),
+        .library(name: "MockRouter", targets: ["MockRouter"])
     ],
     dependencies: [],
     targets: [
         .target(name: "Router", dependencies: []),
-        .testTarget(name: "RouterTests", dependencies: ["Router"]),
+        .target(name: "MockRouter", dependencies: ["Router"])
     ],
     swiftLanguageVersions: [.v5]
 )
